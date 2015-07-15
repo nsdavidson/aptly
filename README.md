@@ -47,6 +47,21 @@ Usage
 ### include recipe
 `include_recipe "aptly"`
 
+### `configure_api_service`
+
+Configures Aptly to run as
+
+Usage
+-----
+
+## add to run_list
+`include_recipe "aptly:configure_api_service"`
+
+OR
+
+## set node attribute to have the default recipe configure it
+node['aptly']['configure_api_service'] = true
+
 Examples
 ---------
 

@@ -19,3 +19,6 @@ default['aptly']['gpgdisableverify'] = false
 default['aptly']['downloadsourcepackages'] = false
 default['aptly']['ppadistributorid'] = ""
 default['aptly']['ppacodename'] = ""
+
+default['aptly']['configure_api_service'] = false
+default['aptly']['api_service_name'] = 'aptly_api'

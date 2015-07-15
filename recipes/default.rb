@@ -18,3 +18,5 @@
 #
 
 include_recipe "aptly::install"
+
+include_recipe "aptly::configure_api_service" if node['aptly']['configure_api_service']

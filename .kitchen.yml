@@ -25,3 +25,9 @@ suites:
       - recipe[aptly::default]
       - recipe[aptly_test::default]
     attributes:
+  - name: api
+    run_list:
+      - recipe[aptly::default]
+    attributes:
+      aptly:
+        configure_api_service: true
